@@ -1,0 +1,208 @@
+/* Eric Meyer's Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Font Face */
+@font-face {
+	font-family: 'Oswald';
+	src: url('../fonts/Oswald-Light.woff2') format('woff2'), url('../fonts/Oswald-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Oswald';
+	src: url('../fonts/Oswald-Regular.woff2') format('woff2'), url('../fonts/Oswald-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Oswald';
+	src: url('../fonts/Oswald-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Adorable';
+	src: url('../fonts/Adorable.woff2') format('woff2'), url('../fonts/Adorable.woff') format('woff');
+}
+@font-face {
+	font-family: 'Myriad Pro';
+	src: url('../fonts/MyriadPro-Regular.woff2') format('woff2'), url('../fonts/MyriadPro-Regular.woff') format('woff');
+}
+/* Global Typography */
+*, :before, :after {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-size: 100%;
+}
+body {
+	font: 300 12px 'Roboto';
+	color: #232221;
+	background: url('../images/background.jpg');
+}
+/* Global Headings */
+h1 {
+	font-size: 16px;
+}
+h2 {
+	font: 700 19.34px/1.16 'Oswald';
+	color: #000;
+	margin-bottom: 4px;
+}
+h3 {
+	font: 400 20px 'Roboto';
+}
+h4 {
+	font: 20px 'Adorable';
+}
+h6 {
+	font-size: 30px;
+}
+/* General Text Formatting */
+p {
+	line-height: 1.7;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+span {
+	display: inline-block;
+}
+em {
+	font-style: italic;
+}
+/* Global Link style */
+a {
+	color: #e15313;
+	display: inline-block;
+	text-decoration: none;
+	outline: none;
+}
+a:hover, a:focus {
+	color: #2980b9;
+}
+.button, .input {
+	outline: none;
+	border: 0;
+	background: transparent;
+	padding: 0;
+}
+.button {
+	cursor: pointer;
+}
+.input {
+	font: 300 12px 'Roboto';
+}
+::placeholder {
+	color: #232221;
+}
+:focus {
+	outline: none;
+}
+/* Global Buttons */
+.orangebutton {
+	font-size: 10px;
+	font-weight: 500;
+	background: #e15313;
+	border: 3px solid #ededed;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px 10px 7px 7px;
+}
+.pinkbutton {
+	font: 100 22px 'Roboto';
+	background: #eb0649;
+	color: #fff;
+	padding: 9px 19px 7px;
+}
+.pinkbutton:hover, .orangebutton:hover {
+	background: #4c4c4c;
+	color: #fff;
+}
+/* Global Sprite Icons */
+[class^="icon-"], [class*="icon-"] {
+	background: url(../images/sprite.png) 0 0 no-repeat;
+	display: inline-block;
+	vertical-align: text-top;
+	width: 20px;
+	height: 21px;
+	font-size: 0;
+}
+/* Clearfix class*/
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+/* Global style */
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0 9px;
+}
+.bottomline {
+	position: relative;
+	margin-bottom: 20px;
+}
+.bottomline::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	background: url('../images/headingborder.png');
+	bottom: 0;
+	right: 1px
+}
+.block {
+	display: block;
+}
+
